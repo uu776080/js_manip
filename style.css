@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}  
+body {
+  background-color: #ccc;
+}
+div#main {
+  display: flex;
+  max-width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+div.btns, div.result {
+  margin: 1%;
+  height: 500px;
+  flex: 50%;
+}
+div.btns {
+}
+button {
+  margin: 10px auto;
+  width: 100px;
+  background-color: #ffffff;
+  color: #000000;
+}
+p {
+  text-align: center;
+}
+#chcol {
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+  margin: 0 auto;
+}

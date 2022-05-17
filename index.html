@@ -2,72 +2,53 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>***</title>
-    <style>
-#main {
-  display: flex;
-  width: 100%;
-}
-      #main div {
-	width: 50%;
-	text-align: center;
-      }
-      button {
-	margin: 10px auto;
-	width: 100px;
-	background-color: #ffffff;
-	color: #000000;
-      }
-      #reset, #negative {
-	width: 265px;
-      }
-      #chcol {
-	width: 50%;
-	height: 200px;
-      }
-      h2 {
-	text-align: center;
-	margin: 0 auto;
-      }
-    </style>
+    <title>manipulation DOM</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id='main'>
-      <div>
-	<div>
-	  <h2>color</h2>
-	  <div>
+	<div class="btns">
+	  <div class="btnsect">
+	    <h2>color</h2>
 	    <button id='-red'>- red</button>
 	    <button id='+red'>+ red</button>
 	  </div>
-	  <div>
+	  <div class="btnsect">
 	    <button id='-green'>- green</button>
 	    <button id='+green'>+ green</button>
 	  </div>
-	  <div>
+	  <div class="btnsect">
 	    <button id='-blue'>- blue</button>
 	    <button id='+blue'>+ blue</button>
 	  </div>
+	<div class="btnsect">
+	  <h2>size</h2>
+	  <div>
+	    <button id='decH'>-H</button>
+	    <button id='incH'>+H</button>
+	  </div>
+	  <div>
+	    <button id='decW'>-W</button>
+	    <button id='incW'>+W</button>
+	  </div>
+	</div>
+	<div class="btnsect">
+	  <h2>reset</h2>
 	  <div>
 	    <button id='reset'>reset</button>
 	  </div>
 	</div>
-	<div>
-	  <button id='incH'>+H</button>
 	</div>
-	<div>
-	  <button id='incW'>+W</button>
-	</div>
-      </div>
-      <div>
+      <div class="result">
 	<div id='chcol'>
 	</div>
 	<div>
 	  <p id='info'></p>
+	  <p id='info2'></p>
+	  <p id='info3'></p>
 	</div>
       </div>
     </div>
-    <script src='main.js'>
-    </script>
+    <script src='main.js'></script>
   </body>
 </html>
